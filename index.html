@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styl.css">
+<title>Calculator</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <form name="form" class="main">
+
+            <input class="form-control " type="text" id="inputResult" disabled>
+
+            <div class="buttons">
+
+                <div class="row ">
+
+                    <div class="col-12 d-flex  justify-content-between">
+
+                        <!-- Clear -->
+                        <!--<input class="btn boldFont btn-info my-2 col-5" type="button" value="Clear"
+                            onclick="clearDisplay()">-->
+
+                        <button type="button" class="btn boldFont btn-info my-2 col-5" id="clear"
+                            onclick="clearDisplay()">Clear</button>
+
+                        <!-- backspace-->
+                        <!--<input class="btn boldFont btn-info my-2 col-2" type="button" value="DEL" onclick="backspace()">-->
+
+                        <button type="button" class="btn boldFont btn-info my-2 col-2" id="del"
+                            onclick="backspace()">DEL</button>
+
+                        <!--<input class="btn btn-info my-2 col-3" type="button" value="/" id="number">-->
+                        <button type="button" class="btn btn-info my-2 col-3" id="/">/</button>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between">
+                        <!--<input class="btn btn-dark my-2 col-2" type="button" value="7" id="number">
+                        <input class="btn btn-dark my-2 col-2" type="button" value="8" id="number">
+                        <input class="btn but btn-dark my-2 col-2" type="button" value="9" id="number">
+                        <input class="btn but boldFont btn-info my-2 col-3" type="button" value="*">-->
+
+                        <button type="button" class="btn btn-dark my-2 col-2" id="7">7</button>
+                        <button type="button" class="btn btn-dark my-2 col-2" id="8">8</button>
+                        <button type="button" class="btn but btn-dark my-2 col-2" id="9">9</button>
+                        <button type="button" class="btn but boldFont btn-info my-2 col-3" id="*">*</button>
+
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-12 d-flex justify-content-between">
+
+                        <!--<input class="btn btn-dark my-2 col-2" type="button" value="4">
+                        <input class="btn btn-dark my-2 col-2" type="button" value="5">
+                        <input class="btn btn-dark my-2 col-2" type="button" value="6">
+                        <input class="btn boldFont btn-info my-2 col-3" type="button" value="-">-->
+
+                        <button type="button" class="btn btn-dark my-2 col-2" id="4">4</button>
+                        <button type="button" class="btn btn-dark my-2 col-2" id="5">5</button>
+                        <button type="button" class="btn btn-dark my-2 col-2" id="6">6</button>
+                        <button type="button" class="btn boldFont btn-info my-2 col-3" id="-">-</button>
+
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-12 d-flex justify-content-between">
+
+                        <!--<input class="btn btn-dark my-2 col-2" type="button" value="1">
+                        <input class="btn btn-dark my-2 col-2" type="button" value="2">
+                        <input class="btn btn-dark my-2 col-2" type="button" value="3">
+                        <input class="btn boldFont btn-info my-2 col-3" type="button" value="+">-->
+
+                        <button type="button" class="btn btn-dark my-2 col-2" id="1">1</button>
+                        <button type="button" class="btn btn-dark my-2 col-2" id="2">2</button>
+                        <button type="button" class="btn btn-dark my-2 col-2" id="3">3</button>
+                        <button type="button" class="btn boldFont btn-info my-2 col-3" id="+">+</button>
+
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-12 d-flex justify-content-between">
+
+                        <!--<input class="btn btn-dark my-2 col-2" type="button" value="0">
+                        <input class="btn btn-dark my-2 col-2" type="button" value=".">
+                        Result 
+                        <input class="btn boldFont btn-info my-2 col-6" type="button" value="=" onclick="getResult()">-->
+
+                        <button type="button" class="btn btn-dark my-2 col-2" id="0">0</button>
+                        <button type="button" class="btn btn-dark my-2 col-2" id=".">.</button>
+                        <button type="button" class="btn boldFont btn-info my-2 col-6" id="="
+                            onclick="getResult()">=</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+</body>
+
+<script src="js/calculator.js"></script>
+
+</html>
